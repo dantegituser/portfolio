@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  box-sizing: inherit;
+  font-size: 1.6rem; }
+
+.general-wrapper {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+section.panel {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  position: absolute; }
+
+section.top-section {
+  background-color: yellow; }
+
+section.about-section {
+  background-color: #00ff40; }
+
+section.work-section {
+  width: 3000px !important;
+  background-color: #00eeff;
+  max-width: 3000px !important; }
+
+section.skills-section {
+  background-color: #d400ff; }
+
+section.contact-section {
+  background-color: #f01d1d; }

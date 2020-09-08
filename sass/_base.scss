@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// FONT
+$default-font-size: 1.6rem;
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: inherit;
+    font-size: $default-font-size;
+}
+
+// inician las secciones
+.general-wrapper {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+section.panel {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    position: absolute;
+}
+
+section.top-section {
+    background-color: yellow;
+}
+
+section.about-section {
+    background-color: rgb(0, 255, 64);
+}
+
+section.work-section {
+    width: 3000px!important;
+    background-color: rgb(0, 238, 255);
+    max-width: 3000px!important;
+}
+
+section.skills-section {
+    background-color: rgb(212, 0, 255);
+}
+
+section.contact-section {
+    background-color: rgb(240, 29, 29);
+}
