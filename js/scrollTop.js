@@ -10,12 +10,12 @@ export class ScrollTop {
 
     iniciarScrolltrigger() {
         console.log('iniciado scroller');
-        this.tl.set('.work-section', { xPercent: 45 });
+        this.tl.set('.work-section', { xPercent: 100 });
         this.tl
             .from(".about-section", { yPercent: -100 })
-            .to(".work-section", { xPercent: -65 })
+            .to(".work-section", { xPercent: -75 })
             .from(".skills-section", { xPercent: 100 })
-            .from(".contact-section", { yPercent: -100 });
+            .from(".contact-section", { yPercent: -110 });
 
 
 
