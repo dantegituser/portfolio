@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dante Martinez Osorio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -12,18 +15,224 @@
 <body>
     <div class="general-wrapper">
         <section class="panel top-section">
-            Top
+            <div class="top-name">
+                <div class="top-effect-wrapper">
+                    <canvas id="canvasport" width="900" height="400"></canvas>
+                    <div class="textMask">
+                        <img src="img/bg-name.png" alt="" />
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="top-developer">
+                Front-end Developer
+            </div>
+            <div class="top-links">
+                <a href="#"><img src="img/cv-icon.png" /></a>
+                <a href="#"><img src="img/git-icon.png" /></a>
+                <a href="#"><img src="img/lkdn-icon.png" /></a>
+            </div>
         </section>
         <section class="panel about-section">
-            about
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="about-p">
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit necessitatibus eius magni, ipsam consectetur aut nihil tenetur? Error natus est eius doloribus quia aliquid quas numquam necessitatibus porro dolorem. Lorem, ipsum dolor sit
+                        </p>
+                        <p> amet consectetur adipisicing elit. Porro reprehenderit necessitatibus eius magni, ipsam consectetur aut nihil tenetur? Error natus est eius doloribus quia aliquid quas numquam necessitatibus porro dolorem.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-letters">
+                        <span class="letras-nombre">D</span>
+                        <span class="letras-nombre">a</span>
+                        <span class="letras-nombre">n</span>
+                        <span class="letras-nombre">t</span>
+                        <span class="letras-nombre">e</span>
+
+                        <span class="letras-nombre">M</span>
+                        <span class="letras-nombre">a</span>
+                        <span class="letras-nombre">r</span>
+                        <span class="letras-nombre">t</span>
+                        <span class="letras-nombre">&iacute;</span>
+                        <span class="letras-nombre">n</span>
+                        <span class="letras-nombre">e</span>
+                        <span class="letras-nombre">z</span>
+                    </div>
+                    <div class="about-image">
+                        <img src="img/profile.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
         </section>
         <section class="panel work-section">
-            <div style="white-space: nowrap; display: flex; align-items:center; justify-content: space-between;">
-                <img src="img/CARD.jpg" alt="" />
-                <img src="img/CARD.jpg" alt="" />
-                <img src="img/CARD.jpg" alt="" />
-                <img src="img/CARD.jpg" alt="" />
-                <img src="img/CARD.jpg" alt="" />
+            <div class="cards-container">
+                <div class="card">
+                    <a href="#">
+                        <div class="card-titulo">
+                            Restaurant
+                        </div>
+                        <div class="card-image">
+                            <img src="img/restaurant-mokup.png" alt="" />
+                        </div>
+                        <div class="card-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                            </ul>
+                        </div>
+                        <div class="view-cont">
+                            <div class="card-button"><span>View</span> <i class="fas fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <!--card-->
+                <div class="card">
+                    <a href="#">
+                        <div class="card-titulo">
+                            Youtube App
+                        </div>
+                        <div class="card-image">
+                            <img src="img/app-youtube.png" alt="" />
+                        </div>
+                        <div class="card-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                            </ul>
+                        </div>
+                        <div class="view-cont">
+                            <div class="card-button"><span>View</span> <i class="fas fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <!--card-->
+                <div class="card">
+                    <a href="#">
+                        <div class="card-titulo">
+                            E-commerce
+                        </div>
+                        <div class="card-image">
+                            <img src="img/ecommerce-mokup.png" alt="" />
+                        </div>
+                        <div class="card-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                            </ul>
+                        </div>
+                        <div class="view-cont">
+                            <div class="card-button"><span>View</span> <i class="fas fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <!--card-->
+                <div class="card">
+                    <a href="#">
+                        <div class="card-titulo">
+                            Maps App
+                        </div>
+                        <div class="card-image">
+                            <img src="img/maps-app.png" alt="" />
+                        </div>
+                        <div class="card-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                            </ul>
+                        </div>
+                        <div class="view-cont">
+                            <div class="card-button"><span>View</span> <i class="fas fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <!--card-->
+                <div class="card">
+                    <a href="#">
+                        <div class="card-titulo">
+                            Realestate
+                        </div>
+                        <div class="card-image">
+                            <img src="img/realstate-mokup.png" alt="" />
+                        </div>
+                        <div class="card-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                            </ul>
+                        </div>
+                        <div class="view-cont">
+                            <div class="card-button"><span>View</span> <i class="fas fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <!--card-->
+                <div class="card">
+                    <a href="#">
+                        <div class="card-titulo">
+                            Upload Images<br> Firebase
+                        </div>
+                        <div class="card-image">
+                            <img src="img/imagenes-mokup.png" alt="" />
+                        </div>
+                        <div class="card-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                            </ul>
+                        </div>
+                        <div class="view-cont">
+                            <div class="card-button"><span>View</span> <i class="fas fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <!--card-->
+                <div class="card">
+                    <a href="#">
+                        <div class="card-titulo">
+                            Chat <br>Firebase
+                        </div>
+                        <div class="card-image">
+                            <img src="img/firechat-app.png" alt="" />
+                        </div>
+                        <div class="card-features">
+                            <h3>Features</h3>
+                            <ul>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                                <li>feature 1</li>
+                            </ul>
+                        </div>
+                        <div class="view-cont">
+                            <div class="card-button"><span>View</span> <i class="fas fa-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+                <!--card-->
+
             </div>
         </section>
         <section class="panel skills-section">

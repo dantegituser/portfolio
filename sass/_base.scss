@@ -17,6 +17,7 @@ html {
 body {
     box-sizing: inherit;
     font-size: $default-font-size;
+    font-family: 'Roboto', sans-serif;
 }
 
 // inician las secciones
@@ -36,23 +37,28 @@ section.panel {
 }
 
 section.top-section {
-    background-color: yellow;
+    background-color: black;
+    z-index: 100;
 }
 
 section.about-section {
-    background-color: rgb(0, 255, 64);
+    background-color: white;
+    z-index: 110;
 }
 
 section.work-section {
     width: 3000px!important;
-    background-color: rgb(0, 238, 255);
+    background-color: #f1efef;
     max-width: 3000px!important;
+    z-index: 120;
 }
 
 section.skills-section {
     background-color: rgb(212, 0, 255);
+    z-index: 130;
 }
 
 section.contact-section {
     background-color: rgb(240, 29, 29);
+    z-index: 140;
 }

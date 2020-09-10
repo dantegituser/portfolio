@@ -1,0 +1,105 @@
+section.about-section {
+    .about-container {
+        //position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        .about-left {
+            flex: 0 1 40%;
+            width: 40%;
+            align-self: center;
+        }
+        .about-right {
+            flex: 0 1 40%;
+            width: 40%;
+            position: relative;
+            .about-letters {
+                height: 100%;
+                span {
+                    position: absolute;
+                    top: 0;
+                    font-weight: bold;
+                    font-size: 6rem;
+                    &:nth-child(1) {
+                        top: 0;
+                        left: -110%;
+                    }
+                    &:nth-child(2) {
+                        top: 0;
+                        left: -100%;
+                    }
+                    &:nth-child(3) {
+                        top: 0;
+                        left: -90%;
+                    }
+                    &:nth-child(4) {
+                        top: 0;
+                        left: -80%;
+                    }
+                    &:nth-child(5) {
+                        top: 0;
+                        left: -70%;
+                    }
+                    &:nth-child(6) {
+                        top: 60px;
+                        left: -115%;
+                    }
+                    &:nth-child(7) {
+                        top: 60px;
+                        left: -100%;
+                    }
+                    &:nth-child(8) {
+                        top: 60px;
+                        left: -90%;
+                    }
+                    &:nth-child(9) {
+                        top: 60px;
+                        left: -80%;
+                    }
+                    &:nth-child(10) {
+                        top: 60px;
+                        left: -70%;
+                    }
+                    &:nth-child(11) {
+                        top: 60px;
+                        left: -60%;
+                    }
+                    &:nth-child(12) {
+                        top: 60px;
+                        left: -50%;
+                    }
+                    &:nth-child(13) {
+                        top: 60px;
+                        left: -40%;
+                    }
+                }
+            }
+        }
+        &::before {
+            content: "About me";
+            width: 80%;
+            height: auto;
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Londrina Outline', cursive;
+            font-size: 20rem;
+            color: #cecaca;
+            z-index: -1;
+        }
+    }
+}
+
+section.about-section .about-container .about-right {
+    .about-image {
+        opacity: 0;
+        visibility: hidden;
+        img {
+            max-width: 70%;
+        }
+    }
+}
