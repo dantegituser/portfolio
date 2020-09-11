@@ -10,6 +10,9 @@ section.about-section {
             flex: 0 1 40%;
             width: 40%;
             align-self: center;
+            p {
+                margin-bottom: 2rem;
+            }
         }
         .about-right {
             flex: 0 1 40%;
