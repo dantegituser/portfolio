@@ -46,7 +46,7 @@ section.skills-section {
   z-index: 130; }
 
 section.contact-section {
-  background-color: #f01d1d;
+  background-color: white;
   z-index: 140; }
 
 section.top-section {
@@ -263,7 +263,7 @@ section.work-section .cards-container .card a {
     text-align: center;
     transition: all 1s ease; }
     section.work-section .cards-container .card a .view-cont:hover .card-button {
-      width: 120px; }
+      width: 70px; }
       section.work-section .cards-container .card a .view-cont:hover .card-button i {
         display: inline; }
     section.work-section .cards-container .card a .view-cont .card-button {
@@ -307,7 +307,10 @@ section.skills-section {
     height: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: space-between; }
+    section.skills-section .skill-container .disclaimer {
+      color: #ce5252; }
 
 section.skills-section .skill-container .skill-row {
   display: flex;
@@ -316,14 +319,59 @@ section.skills-section .skill-container .skill-row {
   width: 100%; }
 
 section.skills-section .skill-container .skill-item {
-  padding: 1rem;
-  border-top: 2px solid blue;
+  padding: 1rem 0 0;
+  border-top: 3px solid #2b425f;
   width: 30%;
-  max-width: 30%; }
+  max-width: 30%;
+  border-radius: 3px;
+  background-color: white;
+  -webkit-box-shadow: 10px 11px 9px -4px rgba(79, 77, 79, 0.59);
+  -moz-box-shadow: 10px 11px 9px -4px rgba(79, 77, 79, 0.59);
+  box-shadow: 10px 11px 9px -4px rgba(79, 77, 79, 0.59); }
   section.skills-section .skill-container .skill-item .skill-description {
     display: flex;
     align-items: center; }
     section.skills-section .skill-container .skill-item .skill-description .logo {
       flex: 1 0 30%; }
     section.skills-section .skill-container .skill-item .skill-description .description {
-      flex: 1 0 70%; }
+      flex: 1 0 70%;
+      padding: 0 10px;
+      font-size: 1.2rem; }
+  section.skills-section .skill-container .skill-item .skill-name {
+    background-color: #c5c4c4;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: white;
+    font-weight: 500;
+    padding: 3px 0; }
+
+section.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, #dd2f6e 30%, #ffffff 30%);
+  background-position: top; }
+  section.contact-section::before {
+    content: "Contact me";
+    text-align: center;
+    width: 80%;
+    height: auto;
+    color: black;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-family: 'Londrina Outline', cursive;
+    font-size: 20rem;
+    color: #cecaca;
+    z-index: -1; }
+  section.contact-section .contact-card {
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid grey; }

@@ -1,0 +1,32 @@
+section.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #dd2f6e 30%, #ffffff 30%);
+    background-position: top;
+    &::before {
+        content: "Contact me";
+        text-align: center;
+        width: 80%;
+        height: auto;
+        color: black;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        font-family: 'Londrina Outline', cursive;
+        font-size: 20rem;
+        color: #cecaca;
+        z-index: -1;
+    }
+    .contact-card {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border: 1px solid grey
+    }
+}

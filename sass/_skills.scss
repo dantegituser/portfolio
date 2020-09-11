@@ -2,51 +2,70 @@ section.skills-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-        &::before {
-            content: "Skills";
-            text-align:center;
-            width: 80%;
-            height: auto;
-            color: black;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'Londrina Outline', cursive;
-            font-size: 20rem;
-            color: #cecaca;
-            z-index: -1;
-        }
-    .skill-container{
+    &::before {
+        content: "Skills";
+        text-align: center;
+        width: 80%;
+        height: auto;
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Londrina Outline', cursive;
+        font-size: 20rem;
+        color: #cecaca;
+        z-index: -1;
+    }
+    .skill-container {
         width: 80%;
         height: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        .disclaimer {
+            color: rgb(206, 82, 82);
+        }
     }
 }
-section.skills-section .skill-container .skill-row{
+
+section.skills-section .skill-container .skill-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-section.skills-section .skill-container .skill-item{
-    padding: 1rem;
-    border-top: 2px solid blue;
+
+section.skills-section .skill-container .skill-item {
+    padding: 1rem 0 0;
+    border-top: 3px solid rgb(43, 66, 95);
     width: 30%;
     max-width: 30%;
-    .skill-description{
+    border-radius: 3px;
+    background-color: white;
+    -webkit-box-shadow: 10px 11px 9px -4px rgba(79, 77, 79, 0.59);
+    -moz-box-shadow: 10px 11px 9px -4px rgba(79, 77, 79, 0.59);
+    box-shadow: 10px 11px 9px -4px rgba(79, 77, 79, 0.59);
+    .skill-description {
         display: flex;
         align-items: center;
-        .logo{
+        .logo {
             flex: 1 0 30%;
         }
-        .description{
+        .description {
             flex: 1 0 70%;
+            padding: 0 10px;
+            font-size: 1.2rem;
         }
     }
-
+    .skill-name {
+        background-color: rgb(197, 196, 196);
+        text-align: center;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        color: white;
+        font-weight: 500;
+        padding: 3px 0;
+    }
 }
-
