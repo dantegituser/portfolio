@@ -7,7 +7,7 @@ $message = $_POST['message'];
 $variable = "";
 
 //datos para envio de email
-$para = "dedisainer@gmail.com";
+$para = "contact@dessinstudio.com";
 $asunto = "Correo del portafolio";
 $mensaje = "<p>";
 $mensaje.= "Nombre: ".$name."\r\n<br>";
