@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 
 <body>
@@ -184,7 +185,7 @@
                             <ul>
                                 <li>Responsive design</li>
                                 <li>Gsap & CSS animations</li>
-                                <li>Moder layout</li>
+                                <li>Modern layout</li>
                             </ul>
                         </div>
                         <div class="view-cont">
@@ -407,26 +408,40 @@
                 </div>
                 <div class="contact-right">
                     <div class="form-contact-cont">
-                        <h3>Send me a messagge</h3>
-                        <form method="POST">
+                        <h3>Send me a message</h3>
+                        <div class="error-fields">
+
+                        </div>
+                        <form method="POST" id="contactForm">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" id="">
+                                <input type="text" name="name" id="name_field" required maxlength="30" title="30 char max">
                             </div>
                             <div class="form-group">
                                 <label for="company">Company</label>
-                                <input type="text" name="company" id="">
+                                <input type="text" name="company" id="company_field" required maxlength="30" title="30 char max">
                             </div>
                             <div class="form-group">
-                                <label for="E-mail">E-mail</label>
-                                <input type="text" name="name" id="">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email_field" required>
                             </div>
                             <div class="form-group">
                                 <label for="messagge">Message</label>
-                                <textarea name="message" id="" cols="30" rows="8"></textarea>
+                                <textarea name="message" id="message_field" cols="30" rows="8" required></textarea>
                             </div>
                             <div class="form-group">
-                                <button style="pointer-events: none;">Send</button>
+                                <button id="send_button">Send</button>
+                            </div>
+                            <div class="mensajeEmail">
+                                <div class="spinner">
+                                    <i class="fas fa-sync fa-spin"></i>
+                                </div>
+                                <div class="succesEmail">
+                                    Message sent, thank you!
+                                </div>
+                                <div class="errorEmail">
+                                    Error, please try later!
+                                </div>
                             </div>
 
 

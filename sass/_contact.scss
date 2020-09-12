@@ -52,6 +52,13 @@ section.contact-section {
         .contact-right {
             flex: 1 0 40%;
             max-width: 40%;
+            .error-fields {
+                background-color: rgb(241, 93, 93);
+                color: white;
+                font-size: 1rem;
+                padding: 5px;
+                display: none;
+            }
             .form-contact-cont {
                 padding: 2rem;
                 border: 1px solid rgb(187, 186, 186);
@@ -69,6 +76,10 @@ section.contact-section {
                 label {
                     font-size: 1.1rem;
                 }
+                .errorInput {
+                    outline: red;
+                    border-color: red;
+                }
                 input,
                 textarea {
                     font-size: 1.2rem;
@@ -78,7 +89,7 @@ section.contact-section {
                     background-color: #eceaea;
                     color: #3a3838;
                     border-style: solid;
-                    border-radius: 0px;
+                    border-radius: 3px;
                     margin-bottom: 1rem!important;
                     &:focus {
                         background: none;
@@ -90,17 +101,51 @@ section.contact-section {
                 }
                 button {
                     background-color: #2f95dd;
-                    padding: 3px 0;
+                    padding: 6px 0;
                     color: white;
                     font-size: 1.3rem;
                     border: none;
+                    border-radius: 3px;
                     cursor: pointer;
                     &:hover {
                         background-color: #1d75b4;
                         font-weight: bold;
                     }
+                    &:link,
+                    &:visited,
+                    &:focus {
+                        outline: none;
+                        border: none;
+                    }
                 }
             }
         }
     }
+}
+
+.botongris {
+    background-color: rgb(155, 153, 153)!important;
+    color: gray!important;
+}
+
+.mensajeEmail div {
+    text-align: center;
+    font-size: 14px;
+    padding: 3px 0;
+}
+
+.mensajeEmail .spinner {
+    display: none;
+}
+
+.mensajeEmail .succesEmail {
+    background-color: green;
+    color: white;
+    display: none;
+}
+
+.mensajeEmail .errorEmail {
+    background-color: red;
+    color: white;
+    display: none;
 }
